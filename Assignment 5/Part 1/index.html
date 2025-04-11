@@ -7,12 +7,20 @@ Description: A simple site to showcase with a number of accessibility
 -->
 
 <!DOCTYPE html>
+<!--
+10 April 2025
+HTML validation
+-->
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
 
     <title>Accessibility assessment</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <!--
+    10 April 2025
+    HTML validation
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7CSonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
 
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
@@ -23,9 +31,17 @@ Description: A simple site to showcase with a number of accessibility
 
   <body>
     <div class="header">
+      <!--
+      10 April 2025
+      Semantic HTML improvements
+      -->
       <h1>Welcome to our wildlife website</h1>
     </div>
 
+    <!--
+    10 April 2025
+    Semantic HTML improvements
+    -->
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -42,6 +58,10 @@ Description: A simple site to showcase with a number of accessibility
 
     <main>
       <article>
+        <!--
+        10 April 2025
+        Semantic HTML improvements
+        -->
         <h2>The trouble with Bears</h2>
         <p>By Evan Wild</p>
         <p>Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from renowned documentary, The Jungle Book.</p>
@@ -50,9 +70,17 @@ Description: A simple site to showcase with a number of accessibility
         <p>Bears come in two varieties — large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub) from another species.</p>
         <p>Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
         <table>
+          <!--
+          10 April 2025
+          Table summary
+          -->
           <caption>useful facts about bears</caption>
           <thead>
             <tr>
+              <!--
+              10 April 2025
+              Table accessibility
+              -->
               <th scope="col">Bear Type</th>
               <th scope="col">Coat</th>
               <th scope="col">Adult size</th>
@@ -63,6 +91,10 @@ Description: A simple site to showcase with a number of accessibility
           </thead>
           <tbody>
             <tr>
+              <!--
+              10 April 2025
+              Table accessibility
+              -->
               <th scope="row">Wild</th>
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
@@ -71,6 +103,10 @@ Description: A simple site to showcase with a number of accessibility
               <td>Fish, meat, plants</td>
             </tr>
             <tr>
+              <!--
+              10 April 2025
+              Table accessibility
+              -->
               <th scope="row">Urban</th>
               <td>North Face</td>
               <td>18 to 22</td>
@@ -81,10 +117,22 @@ Description: A simple site to showcase with a number of accessibility
           </tbody>
         </table>
 
+        <!--
+        10 April 2025
+        Semantic HTML improvements
+        -->
         <h3>Habitats and Eating habits</h3>
         <p>Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.</p>
+        <!--
+        10 April 2025
+        Image accessibility
+        -->
         <img src="media/wild-bear.jpg" alt="A photo of a wild bear">
         <p>Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.</p>
+        <!--
+        10 April 2025
+        Image accessibility
+        -->
         <img src="media/urban-bear.jpg" alt="A photo of an urban bear">
         <p>Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.</p>
         <h3>Mating rituals</h3>
@@ -94,39 +142,79 @@ Description: A simple site to showcase with a number of accessibility
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
+          <!--
+          10 April 2025
+          Audio accessibility
+          -->
           <p><a href="media/bear.mp3">Direct audio file link</a></p>
         </audio>
+        <!--
+        10 April 2025
+        Audio accessibility
+        -->
         <p>Audio Transcript:</p>
         <p>This isn't really an audio fact file about bears, but it is an audio file that you can transcribe.</p>
 
         <aside>
 
+          <!--
+          10 April 2025
+          Semantic HTML improvements
+          -->
           <h3>About the author</h3>
           <p>Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.</p>
           <p>He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.</p>
 
         </aside>
         <section class="comments">
+          <!--
+          10 April 2025
+          Show/hide control accessibility
+          -->
           <div class="show-hide" tabindex="0">Show comments</div>
 
           <div class="comment-wrapper">
 
+            <!--
+            10 April 2025
+            Semantic HTML improvements
+            -->
             <h2>Add comment</h2>
 
             <form class="comment-form">
               <div class="flex-pair">
+                <!--
+                10 April 2025
+                Semantic HTML improvements
+                -->
                 <p>Your name:</p>
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <!--
+                10 April 2025
+                Associated label
+                -->
+                <label for="name"></label><input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
+                <!--
+                10 April 2025
+                Semantic HTML improvements
+                -->
                 <p>Your comment:</p>
-                <input type="text" name="comment" id="comment" placeholder="Enter your comment">
+                <!--
+                10 April 2025
+                Associated label
+                -->
+                <label for="comment"></label><input type="text" name="comment" id="comment" placeholder="Enter your comment">
               </div>
               <div>
                 <input type="submit" value="Submit comment">
               </div>
             </form>
 
+            <!--
+            10 April 2025
+            Semantic HTML improvements
+            -->
             <h2>Comments</h2>
 
             <ul class="comment-container">
@@ -146,6 +234,10 @@ Description: A simple site to showcase with a number of accessibility
       </article>
 
       <div class="secondary">
+        <!--
+        10 April 2025
+        Semantic HTML improvements
+        -->
         <h2>Related</h2>
 
         <ul>
